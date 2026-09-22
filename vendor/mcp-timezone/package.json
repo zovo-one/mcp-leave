@@ -1,0 +1,53 @@
+{
+  "name": "@theluckystrike/mcp-timezone",
+  "version": "0.22.0",
+  "description": "Time zones, meeting slots and calendar invites for people who work with clients abroad. Convert times, find hours that suit everyone, check DST, write .ics. All local.",
+  "type": "module",
+  "bin": {
+    "mcp-timezone": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./lib": {
+      "types": "./dist/lib.d.ts",
+      "default": "./dist/lib.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "timezone",
+    "meeting-scheduler",
+    "world-clock",
+    "dst",
+    "ics",
+    "freelance"
+  ],
+  "license": "MIT",
+  "author": "theluckystrike",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/mcp-servers",
+    "directory": "servers/timezone"
+  },
+  "homepage": "https://github.com/theluckystrike/mcp-servers/tree/main/servers/timezone",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@theluckystrike/mcp-license": "file:../mcp-license",
+    "zod": "^3.25.0"
+  }
+}

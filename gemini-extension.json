@@ -1,0 +1,22 @@
+{
+  "name": "mcp-leave",
+  "version": "0.22.0",
+  "description": "MCP server for a staff leave and PTO tracker: requests, approvals, balances, who is out and a calendar export. Employee leave and PTO: balances, approvals, calendars, and who-is-out summaries.",
+  "settings": [
+    {
+      "name": "mcp.zovo.one token",
+      "description": "A free anonymous token from https://mcp.zovo.one/mcp/token, or your Pro key. One token is one data space, and it is refreshed for another 30 days on every write.",
+      "envVar": "ZOVO_MCP_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "leave": {
+      "httpUrl": "https://mcp.zovo.one/mcp/leave",
+      "headers": {
+        "Authorization": "Bearer ${ZOVO_MCP_TOKEN}"
+      },
+      "description": "Employee leave and PTO: balances, approvals, calendars, and who-is-out summaries."
+    }
+  }
+}

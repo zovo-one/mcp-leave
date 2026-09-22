@@ -1,0 +1,15 @@
+name: mcp-leave
+target: local
+
+runtime: typescript
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      licenseKey:
+        type: string
+        title: License key
+        description: Optional Pro license key (MCPL1....). Leave empty to run the free tier.
+  exampleConfig:
+    licenseKey: ""

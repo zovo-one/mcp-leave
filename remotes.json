@@ -1,0 +1,14 @@
+[
+  {
+    "type": "streamable-http",
+    "url": "https://mcp.zovo.one/mcp/leave",
+    "headers": [
+      {
+        "name": "Authorization",
+        "description": "Bearer <Pro license key or anonymous token from GET https://mcp.zovo.one/mcp/token>",
+        "isRequired": true,
+        "isSecret": true
+      }
+    ]
+  }
+]

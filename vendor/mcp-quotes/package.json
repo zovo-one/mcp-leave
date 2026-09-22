@@ -1,0 +1,55 @@
+{
+  "name": "@theluckystrike/mcp-quotes",
+  "version": "0.22.0",
+  "description": "Send a client a real quote in seconds: line items with VAT, a validity date, a plain-text version to paste into email and an A4 PDF. Accepting a quote turns it into an invoice with the same numbers. All local.",
+  "type": "module",
+  "bin": {
+    "mcp-quotes": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./lib": {
+      "types": "./dist/lib.d.ts",
+      "default": "./dist/lib.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "quote",
+    "estimate",
+    "proposal",
+    "invoice",
+    "vat",
+    "freelance"
+  ],
+  "license": "MIT",
+  "author": "theluckystrike",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/mcp-servers",
+    "directory": "servers/quotes"
+  },
+  "homepage": "https://github.com/theluckystrike/mcp-servers/tree/main/servers/quotes",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@theluckystrike/mcp-invoice": "file:../mcp-invoice",
+    "@theluckystrike/mcp-license": "file:../mcp-license",
+    "pdfkit": "^0.15.0",
+    "zod": "^3.25.0"
+  }
+}

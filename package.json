@@ -1,0 +1,63 @@
+{
+  "name": "@theluckystrike/mcp-leave",
+  "version": "0.22.0",
+  "description": "Employee leave and PTO requests: balances, approvals, calendars, and who-is-out summaries.",
+  "type": "module",
+  "bin": {
+    "mcp-leave": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./lib": {
+      "types": "./dist/lib.d.ts",
+      "default": "./dist/lib.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --declaration && node -e \"import('node:fs').then(f=>f.chmodSync('dist/index.js',0o755))\"",
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "leave",
+    "snag-list",
+    "handover",
+    "inspection",
+    "sign-off",
+    "onboarding"
+  ],
+  "license": "MIT",
+  "author": "theluckystrike",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/mcp-servers",
+    "directory": "servers/leave"
+  },
+  "homepage": "https://github.com/theluckystrike/mcp-servers/tree/main/servers/leave",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@theluckystrike/mcp-license": "file:vendor/mcp-license",
+    "@theluckystrike/mcp-quotes": "file:vendor/mcp-quotes",
+    "@theluckystrike/mcp-timezone": "file:vendor/mcp-timezone",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
