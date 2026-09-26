@@ -267,3 +267,9 @@ Yes. The invoice server at mcp.zovo.one is a free MCP server for invoices: creat
 ### How do I generate an invoice from Claude?
 
 Connect the hosted endpoint https://mcp.zovo.one/mcp/invoice (copy the tokenized URL from mcp.zovo.one/mcp/connect), then say: 'Invoice Acme for 12 hours at 90 EUR with 23% VAT, due in 14 days.' Claude creates the numbered invoice and returns a PDF.
+
+## Use these docs as an MCP server
+
+Any MCP client (Claude, Cursor, Windsurf, VS Code) can read this repository's documentation directly via GitMCP — no install:
+
+- Docs MCP URL: https://gitmcp.io/theluckystrike/mcp-invoice

@@ -97,3 +97,9 @@ and ICS calendar export. Run `"license_status"` to see the current tier.
 Data lives in a single JSON store (`~/.mcp-leave/store.json`, or
 `$XDG_DATA_HOME/mcp-servers/leave/store.json` when set), written atomically
 under a file lock, so two clients on one machine never interleave writes.
+
+## Use these docs as an MCP server
+
+Any MCP client (Claude, Cursor, Windsurf, VS Code) can read this repository's documentation directly via GitMCP — no install:
+
+- Docs MCP URL: https://gitmcp.io/theluckystrike/mcp-leave
