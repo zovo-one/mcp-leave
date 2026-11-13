@@ -103,3 +103,10 @@ under a file lock, so two clients on one machine never interleave writes.
 Any MCP client (Claude, Cursor, Windsurf, VS Code) can read this repository's documentation directly via GitMCP — no install:
 
 - Docs MCP URL: https://gitmcp.io/theluckystrike/mcp-leave
+
+
+## Get it running in 60 seconds
+
+Add the hosted endpoint to Claude, Cursor or any MCP client - free tier, no signup: `https://mcp.zovo.one/mcp/leave`
+See the full tool list and worked examples: [mcpstamp.com/servers/leave](https://www.mcpstamp.com/servers/leave/)
+Unlimited calls + priority support: [$39 lifetime](https://mcp.zovo.one/buy/bundle)
